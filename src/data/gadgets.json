@@ -1,0 +1,113 @@
+[
+    {
+       "product_id": 1,
+       "product_title": "Samsung A04s",
+       "product_image": "/images/smartphone_a1.jpg",
+       "category": "Phones",
+       "price": 299,
+       "description": "A budget-friendly smartphone with excellent battery life.",
+       "specification": ["4GB RAM", "64GB Storage", "Dual SIM"],
+       "availability": true,
+       "rating": 4.2
+    },
+    {
+       "product_id": 2,
+       "product_title": "Oppo K1",
+       "product_image": "/images/smartphone_b2.jpg",
+       "category": "Phones",
+       "price": 499,
+       "description": "Mid-range smartphone with a sleek design and fast charging.",
+       "specification": ["6GB RAM", "128GB Storage", "Fast Charging"],
+       "availability": true,
+       "rating": 4.5
+    },
+    {
+       "product_id": 3,
+       "product_title": "Vivo V40",
+       "product_image": "/images/smartphone_c3.jpg",
+       "category": "Phones",
+       "price": 650,
+       "description": "High-performance smartphone with advanced camera capabilities.",
+       "specification": ["8GB RAM", "256GB Storage", "Triple Camera"],
+       "availability": true,
+       "rating": 4.8
+    },
+    {
+       "product_id": 4,
+       "product_title": "Oneplus Nord",
+       "product_image": "/images/smartphone_d4.jpg",
+       "category": "Phones",
+       "price": 799,
+       "description": "Flagship model with a powerful processor and vibrant display.",
+       "specification": ["12GB RAM", "512GB Storage", "5G"],
+       "availability": true,
+       "rating": 4.9
+    },
+    {
+       "product_id": 5,
+       "product_title": "Iphone 15",
+       "product_image": "/images/smartphone_e5.jpg",
+       "category": "Phones",
+       "price": 1200,
+       "description": "Premium smartphone with superior build quality and camera.",
+       "specification": ["16GB RAM", "1TB Storage", "4K Video Recording"],
+       "availability": true,
+       "rating": 5.0
+    },
+    {
+       "product_id": 6,
+       "product_title": "Nokia C2",
+       "product_image": "/images/smartphone_f6.jpg",
+       "category": "Phones",
+       "price": 150,
+       "description": "Entry-level smartphone with essential features and compact design.",
+       "specification": ["2GB RAM", "32GB Storage", "Dual SIM"],
+       "availability": true,
+       "rating": 3.8
+    },
+    {
+       "product_id": 7,
+       "product_title": "Lenovo Flex",
+       "product_image": "/images/laptop_g1.jpg",
+       "category": "Computers",
+       "price": 799,
+       "description": "Lightweight laptop with fast performance and excellent battery life.",
+       "specification": ["8GB RAM", "256GB SSD", "Intel i5"],
+       "availability": true,
+       "rating": 4.4
+    },
+    {
+       "product_id": 8,
+       "product_title": "Asus Zenbook",
+       "product_image": "/images/laptop_h2.jpg",
+       "category": "Computers",
+       "price": 999,
+       "description": "High-end laptop with advanced graphics and ample storage.",
+       "specification": ["16GB RAM", "512GB SSD", "Intel i7", "Dedicated GPU"],
+       "availability": true,
+       "rating": 4.7
+    },
+    {
+       "product_id": 9,
+       "product_title": "MIbro",
+       "product_image": "/images/smartwatch_i1.jpg",
+       "category": "Smart Watches",
+       "price": 199,
+       "description": "Compact smartwatch with fitness tracking and notifications.",
+       "specification": ["Heart Rate Monitor", "GPS", "Water Resistant"],
+       "availability": true,
+       "rating": 4.3
+    },
+    {
+       "product_id": 10,
+       "product_title": "Noise",
+       "product_image": "/images/smartwatch_j2.jpg",
+       "category": "Smart Watches",
+       "price": 299,
+       "description": "Advanced smartwatch with ECG and long battery life.",
+       "specification": ["ECG", "GPS", "Music Storage"],
+       "availability": true,
+       "rating": 4.6
+    }
+ ]
+ 
