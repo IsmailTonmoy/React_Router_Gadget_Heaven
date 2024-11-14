@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { CiShoppingCart } from "react-icons/ci";
+import { CiHeart } from "react-icons/ci";
 
 
 const Navbar = () => {
@@ -37,8 +39,10 @@ const Navbar = () => {
         <Link to= '/dashboard'>Dashboard</Link>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      
+      <div className="navbar-end gap-2">
+        <Link to="" className="bg-white text-black border rounded-full text-xl"><CiShoppingCart /></Link>
+        <Link to="" className="bg-white text-black border rounded-full text-xl"><CiHeart /></Link>
       </div>
       
     </div>
