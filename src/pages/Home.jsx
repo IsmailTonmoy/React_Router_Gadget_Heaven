@@ -1,11 +1,11 @@
 import Banner from '../components/Banner'
-import { Link, useLocation, Outlet } from "react-router-dom";
+import { Link, useLocation, useLoaderData, Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Categories from "../components/Categories";
 
 
 export default function Homepage() {
-  
+    const categories = useLoaderData();
 
   const location = useLocation();
   const isHomePage = location.pathname === "/";
