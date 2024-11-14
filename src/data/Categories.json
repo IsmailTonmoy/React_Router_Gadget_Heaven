@@ -1,0 +1,29 @@
+[
+
+    {
+        "id": "C0",
+        "category": "All Products",
+        "description": "All Products",
+        "items_count": 2
+    },
+    {
+        "id": "C1",
+        "category": "Smartphones",
+        "description": " Smartphones from different brands.",
+        "items_count": 2
+    },
+    {
+        "id": "C2",
+        "category": "Laptops",
+        "description": "Professional laptops.",
+        "items_count": 2
+    },
+    
+    {
+        "id": "C3",
+        "category": "Smartwatches",
+        "description": "Smartwatches for fitness tracking.",
+        "items_count": 2
+    }
+   
+]
