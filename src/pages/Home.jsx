@@ -1,6 +1,7 @@
 import Banner from '../components/Banner'
 import { Link, useLocation, Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Categories from "../components/Categories";
 
 
 export default function Homepage() {
@@ -42,9 +43,14 @@ export default function Homepage() {
           Explore Cutting-Edge Gadgets
         </h1>
       </div>
+      <div className="flex gap-3">
+        <div className="w-2/12">
+          <Categories categories={categories} />
+        </div>
       <div className="w-10/12">
           <Outlet />
         </div>
+      </div>
       </div>
       );
     }

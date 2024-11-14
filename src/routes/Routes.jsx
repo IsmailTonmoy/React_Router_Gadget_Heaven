@@ -12,6 +12,22 @@ const routes = createBrowserRouter([
         {
           path: "/",
           element:<Home/>,
+          loader: ()=>fetch('/src/data/categories.json'),
+          children:[
+            {
+              path:"/",
+              element:<GadgetCards/>,
+              loader: ()=>fetch('/src/data/gadgets.json'),
+
+            },
+            {
+              path:"category/:category",
+              element:<GadgetCards/>,
+              loader: ()=>fetch('/src/data/gadgets.json'),
+            }
+
+            
+          ]
         },
         {
           path: "/statistics",
