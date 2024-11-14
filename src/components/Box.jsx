@@ -13,7 +13,7 @@ const {
     rating,
   } = gadgets || {};
 
-  return <div className="card bg-base-100 w-80 shadow-xl">
+  return <div className="card bg-base-100  shadow-xl w-60">
   <figure className="">
     <img
     className="w-[200px] h-[182px]"
@@ -25,7 +25,7 @@ const {
     <h2 className="card-title">{product_title}</h2>
     <h2 className="card-title">${price}</h2>
     <div className="card-actions justify-start">
-      <Link to={`/gadget/${product_id}`}><button className="btn btn-outline btn-primary rounded-2xl">View Details</button></Link>
+      <Link to={`/gadgets/${product_id}`}><button className="btn btn-outline btn-primary rounded-2xl">View Details</button></Link>
     </div>
   </div>
 </div>;
