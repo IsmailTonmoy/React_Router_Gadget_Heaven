@@ -1,12 +1,18 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Outlet } from "react-router-dom";
 
-export default function Layout() {
+ const MainLayout = () => {
     return (
     <div>
         <Navbar/>
+        <div className="min-h-[calc(100vh-261px)] py-12">
+        <Outlet/>
+        </div>
         <Footer/>
 
     </div>
     );
   }
+
+  export default MainLayout
