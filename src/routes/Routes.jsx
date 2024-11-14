@@ -3,6 +3,7 @@ import MainLayout from '../layout/MainLayout'
 import Home from '../pages/Home'
 import Statistics from '../pages/Statistics'
 import Dashboard from "../pages/Dashboard";
+import Gbox from "../components/Gbox"
 
 const routes = createBrowserRouter([
     {
@@ -16,13 +17,13 @@ const routes = createBrowserRouter([
           children:[
             {
               path:"/",
-              element:<GadgetCards/>,
+              element:<Gbox/>,
               loader: ()=>fetch('/src/data/gadgets.json'),
 
             },
             {
               path:"category/:category",
-              element:<GadgetCards/>,
+              element:<Gbox/>,
               loader: ()=>fetch('/src/data/gadgets.json'),
             }
 
