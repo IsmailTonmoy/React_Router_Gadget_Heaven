@@ -23,9 +23,17 @@ export default function CartPage() {
               <button >Sort by Price</button>
               <FaSortAmountDown />
         </div>
+        <button
+              disabled={cartItems.length === 0}
+              onClick={handlePurchase}
+              className="bg-purple-600 text-white border rounded-3xl p-2 btn btn-outline "
+            >
+              Purchase
+            </button>
     </div>
   </div>
 </div>
+
             
             
     </>

@@ -42,7 +42,7 @@ const routes = createBrowserRouter([
           children:[
             {
               path:'cart',
-              element:<CartPage/>
+              element:<Cart/>
             }
   
           ]
