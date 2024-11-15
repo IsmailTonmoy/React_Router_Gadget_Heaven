@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
    return(
-      <div className="navbar bg-base-100">
+      <div className={`navbar ${isHomePage?"bg-[#9538E2]": "bg-base-100"}`}>
       <div className="navbar-start">
         
         <Link to="/" className="btn btn-ghost text-xl">Gadget Heaven</Link>

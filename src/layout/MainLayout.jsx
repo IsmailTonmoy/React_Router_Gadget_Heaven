@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
     return (
     <div>
         <Navbar/>
-        <div className="min-h-[calc(100vh-261px)] py-12">
+        <div className="min-h-[calc(100vh-261px)] ">
         <Outlet/>
         </div>
         <Footer/>
