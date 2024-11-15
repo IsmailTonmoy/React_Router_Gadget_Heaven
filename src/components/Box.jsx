@@ -13,10 +13,10 @@ const {
     rating,
   } = gadgets || {};
 
-  return <div className="card bg-base-100  shadow-xl w-60">
+  return <div className="card bg-base-100  shadow-xl w-60 lg:w-80">
   <figure className="">
     <img
-    className="w-[200px] h-[182px]"
+    className="w-[220px] h-[200px] pt-4"
       src={product_image}
       alt="Shoes" />
 

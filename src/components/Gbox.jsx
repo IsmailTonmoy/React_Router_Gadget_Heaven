@@ -22,7 +22,7 @@ export default function Gbox() {
   }, [category, data]);
 
   return (
-    <div className="grid grid-cols-3 gap-2">
+    <div className="grid grid-cols-3 gap-4">
         
       {gadgetData.map((gadgets) => (
         <Box key={gadgets.product_id} gadgets={gadgets} />
