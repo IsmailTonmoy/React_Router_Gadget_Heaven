@@ -8,7 +8,7 @@ import GadgetDetails from "../pages/GadgetDetails";
 import Cart from "../pages/Cart";
 import WishList from "../pages/WishList";
 import Error from "../pages/Error";
-
+import About from "../pages/About"
 const routes = createBrowserRouter([
     {
       path: "/",
@@ -59,6 +59,10 @@ const routes = createBrowserRouter([
           element:<GadgetDetails/>,
           loader: ()=>fetch('/src/data/gadgets.json'),
   
+        },
+        {
+          path: 'about', 
+          element: <About/>
         },
       ],
     },
