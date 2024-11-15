@@ -10,7 +10,6 @@ import { WishlistProvider } from "./notification/WishListNoti";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
     <HelmetProvider>
     <CartProvider>
     <WishlistProvider>

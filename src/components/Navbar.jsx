@@ -41,8 +41,8 @@ const Navbar = () => {
       </div>
       
       <div className="navbar-end gap-2">
-        <Link to="" className="bg-white text-black border rounded-full text-xl"><CiShoppingCart /></Link>
-        <Link to="" className="bg-white text-black border rounded-full text-xl"><CiHeart /></Link>
+        <Link to="dashboard/cart" className="bg-white text-black border rounded-full text-xl"><CiShoppingCart /></Link>
+        <Link to="dashboard/wishlist" className="bg-white text-black border rounded-full text-xl"><CiHeart /></Link>
       </div>
       
     </div>
