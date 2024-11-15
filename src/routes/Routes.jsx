@@ -3,9 +3,9 @@ import MainLayout from '../layout/MainLayout'
 import Home from '../pages/Home'
 import Statistics from '../pages/Statistics'
 import Dashboard from "../pages/Dashboard";
-import Gbox from "../components/Gbox"
-import GadgetDetails from "../pages/GadgetDetails"
-import Cart from "../pages/Cart"
+import Gbox from "../components/Gbox";
+import GadgetDetails from "../pages/GadgetDetails";
+import Cart from "../pages/Cart";
 import WishList from "../pages/WishList";
 
 const routes = createBrowserRouter([

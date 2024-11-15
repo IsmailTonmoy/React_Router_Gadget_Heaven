@@ -1,5 +1,6 @@
 import { MdOutlineCancel } from "react-icons/md";
-export default function CartCard({item}){
+import { useCart } from "../notification/CartNotification";
+export default function GadgetCart({item}){
     const {removeFromCart} = useCart()
     
     console.log(item)
@@ -14,7 +15,8 @@ export default function CartCard({item}){
         <h1>Price: ${item.price}</h1>
         </div>
         <div className="flex items-center text-red-600 text-xl">
-        <button onClick={()=>removeFromCart(item.product_id)}  className="btn text-red-600 text-xl bg-white"><MdOutlineCancel  /></button>
+        <button onClick={()=>removeFromCart(item.product_id)} 
+         className="btn text-red-600 text-xl bg-white"><MdOutlineCancel  /></button>
 
         </div>
     </div>

@@ -9,7 +9,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import { useCart } from "../notification/CartNotification";
 import { useWishlist } from "../notification/WishListNoti";
 
-export default function DetailsPage() {
+export default function GadgetDetails() {
   const { product_id } = useParams();
   const allData = useLoaderData();
   const [data, setData] = useState({});
@@ -25,7 +25,7 @@ export default function DetailsPage() {
   }, [allData, product_id]);
 
 
-  const rating = data.rating || 0;
+  const rating = data?.rating || 0;
 
   function handleWishList() {
     addToWishlist(data);
@@ -40,7 +40,7 @@ export default function DetailsPage() {
     <div>
       <Helmet>
         <title>Details</title>
-        <link rel="icon" type="image/png" href="/public/assets/favicon-16x16.png" />
+        <link rel="icon" type="image/png" href="/src/picture/favicon-16x16.png" />
       </Helmet>
       <Toaster />
       <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl relative s">
@@ -60,21 +60,21 @@ export default function DetailsPage() {
           <div className="hero bg-white ">
             <div className="hero-content flex-col lg:flex-row ">
               <img
-                src={data.product_image}
+                src={data?.product_image}
                 className="max-w-xs rounded-lg shadow-2xl"
                 alt="Product"
               />
               <div className="">
-                <h1 className="text-xl font-bold ">{data.product_title}</h1>
-                <h1 className="text-lg font-bold ">Price: ${data.price}</h1>
+                <h1 className="text-xl font-bold ">{data?.product_title}</h1>
+                <h1 className="text-lg font-bold ">Price: ${data?.price}</h1>
                 <h1 className="text-center mt-2 mb-2 w-20 border border-green-400 rounded-2xl text-green-600 bg-green-100">
-                  {data.availability ? "in-stock" : ""}
+                  {data?.availability ? "in-stock" : ""}
                 </h1>
-                <h1 className="text-sm ">{data.description}</h1>
+                <h1 className="text-sm ">{data?.description}</h1>
                 <div className="py-6">
                   <p className="font-bold">Specifications:</p>
                   <ul>
-                    <li>{data.specification}</li>
+                    <li>{data?.specification}</li>
                   </ul>
                 </div>
                 <div className="flex items-center">
@@ -97,7 +97,8 @@ export default function DetailsPage() {
                   <h1>{rating}</h1>
                 </div>
                 <div className="flex items-center gap-2 mt-2">
-                  <div onClick={handleCart}  className="flex items-center bg-[#9538E2] text-white p-2 font-bold rounded-2xl btn ">
+                  <div onClick={handleCart}  className="flex items-center
+                   bg-[#9538E2] text-white p-2 font-bold rounded-2xl btn ">
                     <button className="  ">
                       Add To Cart
                     </button>

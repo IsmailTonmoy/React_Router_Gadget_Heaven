@@ -2,7 +2,7 @@
     {
        "product_id": 1,
        "product_title": "Samsung A04s",
-       "product_image": "/images/smartphone_a1.jpg",
+       "product_image": "https://i.ibb.co.com/hFgB73y/samsung-a04s.jpg",
        "category": "Smartphones",
        "price": 299,
        "description": "A budget-friendly smartphone with excellent battery life.",
@@ -13,7 +13,7 @@
     {
        "product_id": 2,
        "product_title": "Oppo K1",
-       "product_image": "",
+       "product_image": "https://i.ibb.co.com/6WBbCzn/oppo-k1.jpg",
        "category": "Smartphones",
        "price": 499,
        "description": "Mid-range smartphone with a sleek design and fast charging.",
@@ -24,7 +24,7 @@
     {
        "product_id": 3,
        "product_title": "Vivo V40",
-       "product_image": "/images/smartphone_c3.jpg",
+       "product_image": "https://i.ibb.co.com/ZKgzhHT/vivo-v40.jpg",
        "category": "Smartphones",
        "price": 650,
        "description": "High-performance smartphone with advanced camera capabilities.",
@@ -35,7 +35,7 @@
     {
        "product_id": 4,
        "product_title": "Oneplus Nord",
-       "product_image": "/images/smartphone_d4.jpg",
+       "product_image": "https://i.ibb.co.com/X3NGt7R/oneplus-nord.jpg",
        "category": "Smartphones",
        "price": 799,
        "description": "Flagship model with a powerful processor and vibrant display.",
@@ -46,7 +46,7 @@
     {
        "product_id": 5,
        "product_title": "Iphone 15",
-       "product_image": "/images/smartphone_e5.jpg",
+       "product_image": "https://i.ibb.co.com/hXbTWFC/iphone-15.jpg",
        "category": "Smartphones",
        "price": 1200,
        "description": "Premium smartphone with superior build quality and camera.",
@@ -57,7 +57,7 @@
     {
        "product_id": 6,
        "product_title": "Nokia C2",
-       "product_image": "/images/smartphone_f6.jpg",
+       "product_image": "https://i.ibb.co.com/0mXWckW/nokia-c2.jpg",
        "category": "Smartphones",
        "price": 150,
        "description": "Entry-level smartphone with essential features and compact design.",
@@ -68,7 +68,7 @@
     {
        "product_id": 7,
        "product_title": "Lenovo Flex",
-       "product_image": "/images/laptop_g1.jpg",
+       "product_image": "https://i.ibb.co.com/1b53zLh/lenovo-flex.jpg",
        "category": "Computers",
        "price": 799,
        "description": "Lightweight laptop with fast performance and excellent battery life.",
@@ -79,7 +79,7 @@
     {
        "product_id": 8,
        "product_title": "Asus Zenbook",
-       "product_image": "https://i.ibb.co.com/dJYGq85/asus-zenbook.jpg",
+       "product_image": "https://i.ibb.co.com/0YcchMQ/asus-zenbook.jpg",
        "category": "Computers",
        "price": 999,
        "description": "High-end laptop with advanced graphics and ample storage.",
@@ -90,7 +90,7 @@
     {
        "product_id": 9,
        "product_title": "MIbro",
-       "product_image": "/images/smartwatch_i1.jpg",
+       "product_image": "https://i.ibb.co.com/BZR1Pf3/mibro.jpg",
        "category": "Smartwatches",
        "price": 199,
        "description": "Compact smartwatch with fitness tracking and notifications.",
@@ -101,7 +101,7 @@
     {
        "product_id": 10,
        "product_title": "Noise",
-       "product_image": "/images/smartwatch_j2.jpg",
+       "product_image": "https://i.ibb.co.com/JdcTjkY/noise.jpg",
        "category": "Smartwatches",
        "price": 299,
        "description": "Advanced smartwatch with ECG and long battery life.",
