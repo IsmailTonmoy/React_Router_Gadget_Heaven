@@ -1,7 +1,7 @@
 import { MdOutlineCancel } from "react-icons/md";
 import { useWishlist } from "../notification/WishListNoti";
 import { useCart } from "../notification/CartNotification";
-export default function WishListCard({item}){
+export default function WishList({item}){
     const {removeFromWishlist} = useWishlist()
     const{addToCart} = useCart();
     

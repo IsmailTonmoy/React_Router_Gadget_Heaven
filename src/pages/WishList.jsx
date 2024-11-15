@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-import WishListCard from "../components/GadgetWishList";
+import GadgetWishList from "../components/GadgetWishList";
 import { useWishlist } from "../notification/WishListNoti";
 
 export default function WishList(){
@@ -13,7 +13,7 @@ export default function WishList(){
       </Helmet>
          <div>
         {wishlistItems.map((item) => (
-          <WishListCard key={crypto.randomUUID()} item={item} />
+          <GadgetWishList key={crypto.randomUUID()} item={item} />
         ))}
       </div>
        </div>
