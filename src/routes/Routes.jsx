@@ -6,6 +6,7 @@ import Dashboard from "../pages/Dashboard";
 import Gbox from "../components/Gbox"
 import GadgetDetails from "../pages/GadgetDetails"
 import Cart from "../pages/Cart"
+import WishList from "../pages/WishList";
 
 const routes = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ const routes = createBrowserRouter([
             {
               path:'cart',
               element:<Cart/>
+            },
+            {
+              path:'wishlist',
+              element:<WishList/>
             }
   
           ]
