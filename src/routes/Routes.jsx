@@ -5,6 +5,7 @@ import Statistics from '../pages/Statistics'
 import Dashboard from "../pages/Dashboard";
 import Gbox from "../components/Gbox"
 import GadgetDetails from "../pages/GadgetDetails"
+import Cart from "../pages/Cart"
 
 const routes = createBrowserRouter([
     {
@@ -38,6 +39,13 @@ const routes = createBrowserRouter([
         {
           path: "/dashboard",
           element:<Dashboard/>,
+          children:[
+            {
+              path:'cart',
+              element:<CartPage/>
+            }
+  
+          ]
         },
         {
           path:"gadgets/:product_id",
