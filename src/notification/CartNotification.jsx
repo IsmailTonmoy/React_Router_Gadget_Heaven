@@ -24,6 +24,21 @@ export const CartProvider = ({ children }) => {
     setCartItems((prevItems) => prevItems.filter((item) => item.product_id !== id));
     toast.error("Product has been removed from the cart!");
   };
+  const sortCartByPriceDesc = () => {
+    setCartItems((prevItems) => 
+      [...prevItems].sort((a, b) => b.price - a.price)
+    );
+    toast.success("Sorted by price (descending)"); 
+  };
 
+  const resetCart = () => {
+    setCartItems([]);
+  };
+
+  return (
+    <CartContext.Provider value={{ cartItems, addToCart,removeFromCart,sortCartByPriceDesc,resetCart}}>
+      {children}
+    </CartContext.Provider>
+  );
 
 };
