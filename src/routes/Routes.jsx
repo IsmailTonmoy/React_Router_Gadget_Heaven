@@ -7,11 +7,13 @@ import Gbox from "../components/Gbox";
 import GadgetDetails from "../pages/GadgetDetails";
 import Cart from "../pages/Cart";
 import WishList from "../pages/WishList";
+import Error from "../pages/Error";
 
 const routes = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout/>,
+      errorElement:<Error/>,
       children: [
         {
           path: "/",
