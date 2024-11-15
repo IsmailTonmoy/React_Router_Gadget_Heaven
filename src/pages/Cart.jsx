@@ -30,7 +30,7 @@ export default function Cart() {
     <>
     <Helmet>
         <title>Cart</title>
-        <link rel="icon" type="image/png" href="/public/assets/favicon-16x16.png" />
+        <link rel="icon" type="image/png" href="/src/picture/favicon-16x16.png" />
       </Helmet>
       <div className="mt-2">
         <Toaster />
