@@ -11,7 +11,7 @@ export default function WishList(){
         <link rel="icon" type="image/png" href="/src/picture/favicon-16x16.png" />
       </Helmet>
          <div>
-        {wishlistItems.map((item) => (
+        {wishlistItems?.map((item) => (
           <GadgetWishList key={crypto.randomUUID()} item={item} />
         ))}
       </div>

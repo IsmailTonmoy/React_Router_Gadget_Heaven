@@ -6,7 +6,7 @@ export default function Categories({ categories }) {
       role="tablist"
       className="tabs tabs-boxed flex flex-col space-y-2 bg-white border items-center p-6 "
     >
-      {categories.map((category) => (
+      {categories?.map((category) => (
         <NavLink
           key={category.category}
           to={`/category/${category.category}`}
