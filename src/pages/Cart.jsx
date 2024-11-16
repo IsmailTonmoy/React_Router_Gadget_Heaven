@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 export default function Cart() {
   const navigate = useNavigate();
   const { cartItems, sortCartByPriceDesc, resetCart } = useCart();
-  const modalRef = useRef(null); 
+  const modalRef = useRef(null);
 
   const totalPrice = cartItems.reduce(
     (accumulator, item) => accumulator + item.price,
@@ -28,9 +28,13 @@ export default function Cart() {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Cart</title>
-        <link rel="icon" type="image/png" href="/src/picture/favicon-16x16.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/src/picture/favicon-16x16.png"
+        />
       </Helmet>
       <div className="mt-2">
         <Toaster />
@@ -41,8 +45,11 @@ export default function Cart() {
           <div className="flex items-center gap-2">
             <h1 className="font-bold">Total Cost: ${totalPrice}</h1>
 
-            <div onClick={sortCartByPriceDesc} className="btn btn-outline flex items-center gap-2 border border-purple-600 rounded-3xl text-purple-600 p-2 ">
-              <button >Sort by Price</button>
+            <div
+              onClick={sortCartByPriceDesc}
+              className="btn btn-outline flex items-center gap-2 border border-purple-600 rounded-3xl text-purple-600 p-2 "
+            >
+              <button>Sort by Price</button>
               <FaSortAmountDown />
             </div>
             <button
@@ -57,7 +64,7 @@ export default function Cart() {
       </div>
 
       <div>
-        {cartItems.map((item) => (
+        {cartItems?.map((item) => (
           <GadgetCart key={crypto.randomUUID()} item={item} />
         ))}
       </div>
@@ -65,17 +72,18 @@ export default function Cart() {
       {/* Modal */}
       <dialog ref={modalRef} id="my_modal_3" className="modal">
         <div className="modal-box">
-          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={confirmPurchase}>
+          <button
+            className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            onClick={confirmPurchase}
+          >
             ✕
           </button>
           <div className="flex items-center flex-col">
-          <h3 className="font-bold text-lg">CONGRATULATION!!</h3>
-          <p className="py-4">Congratulations on your purchase!</p>
-          <MdCelebration className="text-3xl" />
+            <h3 className="font-bold text-lg">CONGRATULATION!!</h3>
+            <p className="py-4">Congratulations on your purchase!</p>
+            <MdCelebration className="text-3xl" />
           </div>
-          <div className="modal-action">
-            
-          </div>
+          <div className="modal-action"></div>
         </div>
       </dialog>
     </>

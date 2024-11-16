@@ -1,5 +1,4 @@
-
-import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
@@ -24,7 +23,6 @@ export default function GadgetDetails() {
     setData(find);
   }, [allData, product_id]);
 
-
   const rating = data?.rating || 0;
 
   function handleWishList() {
@@ -32,15 +30,19 @@ export default function GadgetDetails() {
     setIsPress(true);
   }
 
-  function handleCart(){
+  function handleCart() {
     addToCart(data);
-  } 
- 
+  }
+
   return (
     <div>
       <Helmet>
         <title>Details</title>
-        <link rel="icon" type="image/png" href="/src/picture/favicon-16x16.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/src/picture/favicon-16x16.png"
+        />
       </Helmet>
       <Toaster />
       <div className="hero bg-[#9538E2] min-h-96 rounded-b-xl relative s">
@@ -83,7 +85,7 @@ export default function GadgetDetails() {
                 </div>
                 <div className="flex items-center">
                   <div className="rating rating-sm">
-                    {[...Array(5)].map((_, index) => (
+                    {[...Array(5)]?.map((_, index) => (
                       <input
                         key={index}
                         type="radio"
@@ -97,11 +99,12 @@ export default function GadgetDetails() {
                   <h1>{rating}</h1>
                 </div>
                 <div className="flex items-center gap-2 mt-2">
-                  <div onClick={handleCart}  className="flex items-center
-                   bg-[#9538E2] text-white p-2 font-bold rounded-2xl btn ">
-                    <button className="  ">
-                      Add To Cart
-                    </button>
+                  <div
+                    onClick={handleCart}
+                    className="flex items-center
+                   bg-[#9538E2] text-white p-2 font-bold rounded-2xl btn "
+                  >
+                    <button className="  ">Add To Cart</button>
                     <CiShoppingCart />
                   </div>
                   <button
@@ -119,7 +122,6 @@ export default function GadgetDetails() {
           </div>
         </div>
       </div>
-    </div>          
-   
+    </div>
   );
 }
